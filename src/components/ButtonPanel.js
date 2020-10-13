@@ -4,38 +4,38 @@ import Button from './Button';
 export default function ButtonPanel() {
   return (
     <div className="buttonPanel">
-      <div className="group1">
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
-        <Button name="÷" className="operator" />
+      <div className="group">
+        <Button name="AC" color="gray" />
+        <Button name="+/-" color="gray" />
+        <Button name="%" color="gray" />
+        <Button name="÷" />
       </div>
 
-      <div className="group2">
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="x" className="operator" />
+      <div className="group">
+        <Button name="7" color="gray" />
+        <Button name="8" color="gray" />
+        <Button name="9" color="gray" />
+        <Button name="x" />
       </div>
 
-      <div className="group3">
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
-        <Button name="-" className="operator" />
+      <div className="group">
+        <Button name="4" color="gray" />
+        <Button name="5" color="gray" />
+        <Button name="6" color="gray" />
+        <Button name="-" />
       </div>
 
-      <div className="group4">
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
-        <Button name="+" className="operator" />
+      <div className="group">
+        <Button name="1" color="gray" />
+        <Button name="2" color="gray" />
+        <Button name="3" color="gray" />
+        <Button name="+" />
       </div>
 
-      <div className="group5">
-        <Button name="0" className="zero" />
-        <Button name="." />
-        <Button name="=" className="operator" />
+      <div className="group">
+        <Button name="0" color="gray" wide />
+        <Button name="." color="gray" />
+        <Button name="=" />
       </div>
     </div>
   );

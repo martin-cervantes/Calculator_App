@@ -5,35 +5,50 @@
 }
 
 .calculator {
-  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
   margin: 0.5rem auto;
 }
 
 .display {
-  background-color: var(--dark_gray);
   border: 1px solid #999;
+  display: flex;
+  background-color: var(--dark_gray);
   color: #fff;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
+  align-items: flex-end;
+  height: 100px;
+  justify-content: flex-end;
   padding: 0.8rem 0.5rem;
-  text-align: right;
+}
+
+.buttonPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100px;
 }
 
 button {
-  background-color: var(--light_gray);
+  background-color: var(--orange);
   border: 1px solid #999;
   cursor: pointer;
   font-size: 2.5rem;
-  height: 5rem;
   padding: 0;
   text-align: center;
-  width: 5rem;
+  width: 25%;
 }
 
-.operator {
-  background-color: var(--orange);
+.gray {
+  background-color: var(--light_gray);
 }
 
-.zero {
-  width: 10rem;
+.twice {
+  width: 50%;
 }
