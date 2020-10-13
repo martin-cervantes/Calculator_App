@@ -1,5 +1,11 @@
 import React from 'react';
+import Display from './Display';
 
 export default function App() {
-  return <div>Hello World</div>;
+  return (
+    <div className="calculator">
+      <Display />
+      <div>ButtonPanel</div>
+    </div>
+  );
 }
