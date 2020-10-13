@@ -1,0 +1,39 @@
+:root {
+  --light_gray: #dfdfdf;
+  --dark_gray: #858393;
+  --orange: #ff8e23;
+}
+
+.calculator {
+  width: 20rem;
+  margin: 0.5rem auto;
+}
+
+.display {
+  background-color: var(--dark_gray);
+  border: 1px solid #999;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0.8rem 0.5rem;
+  text-align: right;
+}
+
+button {
+  background-color: var(--light_gray);
+  border: 1px solid #999;
+  cursor: pointer;
+  font-size: 2.5rem;
+  height: 5rem;
+  padding: 0;
+  text-align: center;
+  width: 5rem;
+}
+
+.operator {
+  background-color: var(--orange);
+}
+
+.zero {
+  width: 10rem;
+}
