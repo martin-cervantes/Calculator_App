@@ -45,6 +45,10 @@ button {
   width: 25%;
 }
 
+.orange {
+  background-color: var(--orange);
+}
+
 .gray {
   background-color: var(--light_gray);
 }
