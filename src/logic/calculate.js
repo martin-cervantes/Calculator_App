@@ -9,7 +9,7 @@ export default function calculate(data, buttonName) {
     total = null;
     next = null;
     operation = null;
-  } else if (digits.includes(buttonName)) {
+  } else if (digits.includes(buttonName) || buttonName === '.') {
     if (operation === '=') {
       total = null;
       next = null;
