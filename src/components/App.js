@@ -20,9 +20,11 @@ export default class App extends React.Component {
   }
 
   render() {
+    const { total, next } = this.state;
+
     return (
       <div className="calculator">
-        <Display />
+        <Display data={next || total || '0'} />
         <ButtonPanel />
       </div>
     );
