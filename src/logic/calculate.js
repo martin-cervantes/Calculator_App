@@ -15,21 +15,20 @@ export default function calculate(data, buttonName) {
       next = null;
       operation = null;
     }
-
-    if (total === null && next === null && operation === null) {
-      total = buttonName;
-    } else if (next === null && operation === null) {
-      if (buttonName === '.') {
+    if (next === null && operation === null) {
+      if (total === null) total = buttonName;
+      else if (buttonName === '.') {
         total = total.includes(buttonName) ? `${total}` : total + buttonName;
       } else {
         total += buttonName;
       }
-    } else if (next === null) {
-      next = buttonName;
-    } else if (buttonName === '.') {
-      next = next.includes(buttonName) ? `${next}` : next + buttonName;
-    } else {
-      next += buttonName;
+    } else if (total !== null && operation !== null) {
+      if (next === null) next = buttonName;
+      else if (buttonName === '.') {
+        next = next.includes(buttonName) ? `${next}` : next + buttonName;
+      } else {
+        next += buttonName;
+      }
     }
   } else if (operator.includes(buttonName)) {
     if (total !== null) {
