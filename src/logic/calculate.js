@@ -37,8 +37,8 @@ export default function calculate(data, buttonName) {
       if (buttonName === '%') total /= 100;
     }
   } else if (buttonName === '+/-') {
-    if (total !== null) total *= -1;
     if (next !== null) next *= -1;
+    else if (total !== null) total *= -1;
   } else if (buttonName === '=') {
     if (total !== null && next !== null && operation !== null) {
       total = operate(total, next, operation);
