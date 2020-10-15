@@ -25,7 +25,7 @@ export default class App extends React.Component {
     return (
       <div className="calculator">
         <Display data={next || total || '0'} />
-        <ButtonPanel />
+        <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
   }
