@@ -32,8 +32,11 @@ export default function calculate(data, buttonName) {
       next += buttonName;
     }
   } else if (operator.includes(buttonName)) {
-    if (total !== null) operation = buttonName;
-  } else if (buttonName === '+/-' && next !== null) {
+    if (total !== null) {
+      operation = buttonName;
+      if (buttonName === '%') total /= 100;
+    }
+  } else if (buttonName === '+/-') {
     if (total !== null) total *= -1;
     if (next !== null) next *= -1;
   } else if (buttonName === '=') {
