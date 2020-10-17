@@ -1,0 +1,57 @@
+:root {
+  --light_gray: #dfdfdf;
+  --dark_gray: #858393;
+  --orange: #ff8e23;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 0.5rem auto;
+}
+
+.display {
+  border: 1px solid #999;
+  display: flex;
+  background-color: var(--dark_gray);
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+  align-items: flex-end;
+  height: 100px;
+  justify-content: flex-end;
+  padding: 0.8rem 0.5rem;
+}
+
+.buttonPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100px;
+}
+
+button {
+  border: 1px solid #999;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 0;
+  text-align: center;
+  width: 25%;
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.gray {
+  background-color: var(--light_gray);
+}
+
+.twice {
+  width: 50%;
+}
