@@ -16,16 +16,16 @@ test('Return num1 times num2', () => {
 });
 
 test('Return num1 div num2', () => {
-  const total = operate(5, 5, '/');
+  const total = operate(5, 5, '÷');
   expect(total).toBe('1');
 });
 
 test('Return Error in Division by Zero', () => {
-  const total = operate(5, 0, '/');
+  const total = operate(5, 0, '÷');
   expect(total).toBe('Error');
 });
 
 test('Return 5% of 100', () => {
-  const total = operate(5, 100, '%');
+  const total = operate(0.05, 100, '%');
   expect(total).toBe('5');
 });

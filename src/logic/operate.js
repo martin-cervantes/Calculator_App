@@ -11,9 +11,9 @@ export default function operate(n1, n2, op) {
 
     case 'x': return num1.times(num2).toString();
 
-    case '/': return n2 === 0 ? 'Error' : num1.div(num2).toString();
+    case '÷': return n2 === 0 ? 'Error' : num1.div(num2).toString();
 
-    case '%': return num1.mod(num2).toString();
+    case '%': return num1.times(num2).toString();
 
     default: return 'Error';
   }
