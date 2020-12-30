@@ -13,7 +13,7 @@ This project is about creating a very simple React application. Working on a rea
 
 ## :mag: Live Demo
 
-[Live Demo Link](https://calculator-app-project.herokuapp.com/)
+[Live Demo Link](https://mcervantes71.githup.io/Calculator_App/index.html)
 
 ## :computer: Getting Started
 
